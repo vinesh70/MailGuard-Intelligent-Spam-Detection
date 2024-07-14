@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Classifier App by Vinesh Ryapak</title>
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <h1>MailGuard: Intelligent Spam Detection</h1>
+        <form method="POST">
+            <input type="text" name="review" placeholder="Enter the text to check" autocomplete="off">
+            <input type="submit" value="Predict">
+        </form>
+        <h2>{{ msg }}</h2>
+    </center>
+    <footer>
+        <p>Made by <span>Vinesh Ryapak</span></p>
+    </footer>
+</body>
+</html>
